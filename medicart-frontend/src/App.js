@@ -1,10 +1,10 @@
 import React from 'react'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
   return (
     <div>
-      <h2>Medicart Team</h2>
-      <h2>Please stop misbehaving</h2>
+      <Navbar/>
     </div>
   )
 }
