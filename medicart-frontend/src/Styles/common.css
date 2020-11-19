@@ -6,7 +6,8 @@
   }
 
   body{
-    background: #fafaf6;
+    /* background: #fafaf6; */
+    background: #fff;
     width: 100vw;
     height: 100vh;
   }

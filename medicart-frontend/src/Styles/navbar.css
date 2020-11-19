@@ -1,5 +1,6 @@
 .NavbarItems{
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);
+    /* background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%); */
+    background: #E5E5E5;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,6 +30,23 @@
     margin-right: 2rem;
 }
 
+
+.contact{
+    min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #3960C6;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+
+
+
 .nav-links{
     color: white;
     text-decoration: none;
@@ -53,5 +71,85 @@
 }
 
 @media screen and (max-width: 900px){
-    
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+.nav-menu.active{
+    background: #6668f4;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5 ease;
+    z-index: 1;
+}
+.nav-links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+}
+
+.contact{
+    background-color: blue
+}
+
+.nav-links:hover{
+    background-color: #7577fa;
+    border-radius: 0;
+}
+
+.navbar-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+}
+
+.menu-icon{
+    display: block;
+    position: absolute;
+    top: 0.59%;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.fa-times{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nav-links-mobile{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #4ad9e4;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.nav-links-mobile:hover{
+    background:#fff;
+    color: #6568f4;
+    transform: 250ms;
+}
+
+/* Button{
+    display: none;
+} */
+
+
 }
